@@ -1,87 +1,46 @@
-// java script: Variables- let,const,var.
+// Data Typed:
 
-//**************** Var ********************* */
+//1. number:
 
-// ustin 'var'- old method
-// with 'var'
-/*
-var color = "red"
-console.log(color)
+const dell = 3000
+console.log(typeof dell)        //number
 
-var color = "yellow"
-console.log(color)
+const price = 33.33
+console.log(typeof price)       //number
 
-// without 'var'
-color = "blue"
-console.log(color)
-*/
+//2. boolean type:
 
-//*********** let ************
+const isYouHappy = true
+console.log(typeof isYouHappy)      //boolean
 
-//using 'let'- introduce in ES6,ECMA Script 2015.
+const isAllow = false
+console.log(typeof isAllow)         //boolean
 
-/*
-let color = "red"
-console.log(color)          //red
+//3. String type:
 
-// update value:
-color = "yellow"
-console.log(color)          //yellow
+const name = "Jay singh"
+console.log(typeof name)         //string
 
-//not allow to declare again:
-let color = "blue"
-console.log(color)        //Error
-*/
+//4. Object type:
 
-//***************** Const ***************************** */
+// json-type in js, and it's dictionary in python and Java.
+const product = {name:"tomato",price:200}
+console.log(typeof product)         //object
 
-//using 'const': introduce in ES6,Ecma script 2015.
+// Array:
+const colors = ["red","green","blue"]
+console.log(typeof colors)         //object
 
-/*
-const color = "red"
-console.log(color)              //red
-*/
+// date:
+const today = new Date()
+console.log(typeof today)         //object
 
-/*
-// not allow to update value
-const color = "red"
-color = "black"                 //TypeError: Assignment to constant variable.
-console.log(color)
-*/
+// null:
+const money = null
+console.log(typeof money)         //object
 
-/*
-//not allow to declare again: 
-const color = "red"
-const color = "yellow"
-console.log (color)     //SyntaxError: Identifier 'color' has already been declared
-*/
-
-/*
-//assignment later not allowed
-const name 
-name = "kushal"
-console.log (name)
-*/
-
-//**************** Block Scope ************************* */
-// let and const feature
-
-const price = 200           //global variable
-{
-    const price = 100       // scop variable
-    console.log(price)
+// class or function:
+class employee{
 }
-console.log(price)      
-
-// not work with 'var'
-
-const rate = 200
-var discount = 20
-{
-    const rate = 100
-    var discount = 20
-    console.log(discount)
-    console.log(rate)
-}
-console.log(rate)
-console.log(discount)
+const Jay = new employee
+console.log(typeof Jay)         //object
