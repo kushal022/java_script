@@ -44,3 +44,52 @@ class employee{
 }
 const Jay = new employee
 console.log(typeof Jay)         //object
+
+//function type:
+
+const mobNo = parseInt("9057565656")
+console.log(mobNo)              //9057565656
+console.log(typeof mobNo)       //number
+console.log(typeof parseInt)    //function [parseInt(): converts string into integer]
+
+// user def function:
+
+function add(x,y){
+    return x + y
+}
+console.log(add(3,4))       // 7
+console.log(typeof add)     // function
+
+// class: ( 'class' consider as 'function' in javascript)
+
+class Employee{
+
+}
+console.log(typeof Employee)        // function
+
+/*********************** Symbol() type *********************************/
+
+// its unique value. it has two types 'primitive types' & 'complex types - pass reference'.
+
+console.log(typeof Symbol())      // symbol
+
+// Primitive type: string, number, boolean, undefined, symbol.
+
+const Rate = 100
+let updateRate = Rate
+
+updateRate = 200
+
+console.log(Rate,updateRate)        // 100 200
+
+// complex types: pass reference: object, array, function.
+
+const Rs = ["five","six"]
+const updateRs = Rs
+
+updateRs[0] = "seven"
+
+console.log(updateRs)       // ['seven','six']
+
+console.log(Rs)             // ['seven','six']
+
