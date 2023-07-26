@@ -208,3 +208,187 @@ if (a>b){
 }else{
     console.log(a,"is small number")
 }
+
+/*12
+Find a big number in 2 numbers
+Input:
+Enter 1st number: 45
+Enter 2nd number: 55
+
+Output:
+2nd number 55 is big
+*/
+
+a = 49
+b = 8
+
+if (a>b){
+    console.log(a,"is biger number.")
+}else{
+    console.log(b,"is biger number")
+}
+
+/*13.
+Convert G to KG and KG to G
+Input:
+1. G to KG
+2. KG to G
+
+Enter Choice (1 / 2): 1
+Enter Gram: 1000
+
+Output:
+1 KG
+*/
+
+gram = 100
+kg = 5
+let choice = 2
+
+switch(choice){
+    case 1:
+        gTk = gram/1000
+        console.log(gram,"gm =",gTk,"kg")
+        break;
+
+    case 2:
+        kTg = kg*1000
+        console.log(kg,"Kg =",kTg,"gm")
+        break;
+
+    default:
+        console.log("Invalid choice!!")
+}
+
+
+/*14.
+Find a big number in 3 numbers
+Input:
+Enter 1st number: 45
+Enter 2nd number: 55
+Enter 3rd number: 85
+
+Output:
+3rd number 85 is big
+*/
+
+a = 400
+b = 9
+c = 55
+
+if (b<a && c<a){
+    console.log(a,"is biger number.")
+}else if (a<b && c<b){
+    console.log(b,"is biger number")
+}else{
+    console.log(c,"is biger number")
+}
+
+/*15
+Find a small number in 3 numbers
+Input:
+Enter 1st number: 55
+Enter 2nd number: 45
+Enter 3rd number: 85
+
+Output:
+2nd number 45 is small
+*/
+
+a = 4
+b = 9
+c = 2
+
+if (a<b && a<c){
+    console.log(a,"is smaller number.")
+}else if (b<a && b<c){
+    console.log(b,"is smaller number")
+}else{
+    console.log(c,"is smaller number")
+}
+
+/*16
+Find topper of the class from 5 students
+
+Input:
+Enter 1st student percentage: 45
+Enter 2nd student percentage: 95
+Enter 3rd student percentage: 66
+Enter 4th student percentage: 96
+Enter 5th student percentage: 87
+
+Output:
+4th student is a topper with 96 % 
+*/
+
+a = 99
+b = 94
+c = 9
+d = 9
+e = 9
+
+if (a>b && a>c && a>d && a>e){
+    console.log("1st student is a toppre with",a,"%")
+}else if (b>a && b>c && b>d && b>e){
+    console.log("2nd student is a toppre with",b,"%")
+}else if (c>a && c>b && c>d && c>e){
+  console.log("3rd student is a toppre with",c,"%")
+}else if (d>a && d>c && d>b && d>e){
+    console.log("4th student is a toppre with",d,"%")
+}else{
+  console.log("5th student is a toppre with",e,"%")
+}
+
+/*17
+Find a player who has given the lowest performance
+Input:
+Enter 1st player runs: 46
+Enter 2nd player runs: 55
+Enter 3rd player runs: 98
+Enter 4th player runs: 45
+Enter 5th player runs: 89
+
+Output:
+4th player has given low performance with 45 run 
+*/
+
+
+a = 99
+b = 94
+c = 92
+d = 90
+e = 97
+
+if (a<b && a<c && a<d && a<e){
+    console.log("1st player has performance with",a,"%")
+
+}else if (b<a && b<c && b<d && b<e){
+    console.log("2nd player has performance with",b,"%")
+
+}else if (c<a && c<b && c<d && c<e){
+    console.log("3rd player has performance with",c,"%")
+
+}else if (d<a && d<c && d<b && d<e){
+    console.log("4th player has performance with",d,"%")
+
+}else{
+    console.log("5th player has performance with",e,"%")
+
+}
+
+/*18
+Check you are allowed to drive a car on an even day
+Input:
+Enter Vehicle No.: 1220
+
+Output:
+Vehicle No. 1220 is allowed to drive on even day
+
+*/
+
+
+
+
+
+
+
