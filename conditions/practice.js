@@ -386,9 +386,89 @@ Vehicle No. 1220 is allowed to drive on even day
 
 */
 
+v = 1220
+
+day = 27
+
+if (day%2==0){
+    console.log("Vehicle No.",v,"is allowed to drive on even day.")
+}else{
+    console.log("Vehicle No.",v,"is not allowed to drive on even day.")
+}
+
+/*19
+Check you are allowed to drive a car on an odd day
+Input:
+Enter Vehicle No.: 1220
+
+Output:
+Vehicle No. 1220 is not allowed to drive on an odd day
+*/
+
+v = 1220
+day = 22
+
+if (day%2!=0){
+    console.log("Vehicle No.",v,"is allowed to drive on odd day.")
+}else{
+    console.log("Vehicle No.",v,"is not allowed to drive on odd day.")
+}
+
+/*20
+Check you are allowed to drive a car as per day
+Input:
+Enter date: 12
+Enter Vehicle No: 1220
+
+Vehicle No. 1220 is allowed to drive on date 12.
+
+*/
+
+date = 12
+vehicleNo = 1220
+
+if(date%2==0){
+    console.log ("Vehicle No.",vehicleNo,"is allowed to drive on even day.")
+}else{
+    console.log("Vehicle no.",vehicleNo,"is allowed to drive on odd day.")
+}
+
+/*21
+check character is small or capital letter or not
+Input:
+Enter a character: z
+
+z is a small letter
+*/
+
+char = "A"
+
+if (char >= "a" && "z" >= char){
+    console.log(char,"is a small letter.")
+}else if(char>="A" && char <= "Z"){
+    console.log(char,"is a capital letter.")
+}else{
+    console.log ("Invalid input!!")
+}
 
 
+/*22
+check character is vowel or not
+Input:
+Enter a character: a
 
+a is vowel
+Logic
 
+a, e, i, o, u are vowels
+*/
 
+char = "y";
 
+vowel = ['a','e','i','o','u'];
+
+if (vowel.includes(char)){
+    console.log(char,"is vowel.");
+}else{
+    console.log(char,' is not vowel.');
+}
