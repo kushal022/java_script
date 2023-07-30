@@ -159,6 +159,9 @@ for (i=1; i<=num; i++){
     }
 }
 console.log("Total of even no. is",sum)
+console.log("-----------------------------------------")
+
+
 
 /*8
 Make a program to print only even number in 1 to given number
@@ -177,3 +180,29 @@ for (i=1; i<=num; i++){
         console.log(i)
     }
 }
+console.log("-----------------------------------------")
+/* 9.
+Make a Program to print total sum of 1 to given number and print exact output
+Input:
+Enter number: 5
+
+Output:
+1 + 2 + 3 + 4 + 5 = 15
+ */
+
+num = 5;
+let strNum = "";
+sum = 0;
+for (i=1; i<=num; i++){
+    // sum += i
+    sum = sum + i;
+    // strNum += i;
+    strNum = strNum + i;
+    if (i<num){
+        strNum = strNum + "+";
+    }
+    // console.log(strNum,typeof strNum)
+}
+console.log(strNum,"=",sum)
+
+console.log("-----------------------------------------")
