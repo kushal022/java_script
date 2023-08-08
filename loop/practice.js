@@ -206,3 +206,68 @@ for (i=1; i<=num; i++){
 console.log(strNum,"=",sum)
 
 console.log("-----------------------------------------")
+
+
+
+/*10
+Make a Program to print total sum of only even number in 1 to given number
+Input:
+Enter number: 10
+
+Output:
+Total is 30
+Logic:
+2 + 4 + 6 + 8 + 10 = 30
+*/
+
+num = 10;
+sum = 0;
+for(i=1;i<=num;i++){
+    if(i%2===0){
+        sum = sum + i;
+    }
+}
+console.log("Total is",sum)
+
+/*11
+Make a program to print only even number in 1 to given number
+Input:
+Enter number: 30
+
+Output:
+2, 4, 6, 8, 10, 12, 14, 16, 17, 18, 20, 22, 24, 26, 28, 30
+
+*/
+
+num =30;
+pattern = "";
+for(i=1;i<=num;i++){
+    if(i%2===0){
+        pattern = pattern+i
+        if(i<num){
+            pattern = pattern + ","
+        }
+    }
+}console.log(pattern)
+
+/*12
+Make a following pattern
+Input:
+Enter Number: 5
+
+Output:
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+*/
+
+num = 5;
+
+for(i=1;i<=num;i++){
+    pattern = "";
+    for(j=1;j<=num;j++){
+        pattern = pattern +" "+ j;
+    }console.log(pattern)
+}
