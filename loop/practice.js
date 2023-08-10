@@ -228,6 +228,8 @@ for(i=1;i<=num;i++){
     }
 }
 console.log("Total is",sum)
+console.log("-----------------------------------------")
+
 
 /*11
 Make a program to print only even number in 1 to given number
@@ -249,6 +251,8 @@ for(i=1;i<=num;i++){
         }
     }
 }console.log(pattern)
+console.log("-----------------------------------------")
+
 
 /*12
 Make a following pattern
@@ -270,4 +274,76 @@ for(i=1;i<=num;i++){
     for(j=1;j<=num;j++){
         pattern = pattern +" "+ j;
     }console.log(pattern)
+}
+console.log("-----------------------------------------")
+
+
+
+/*13
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+
+*/
+
+num = 5;
+
+for(i=1; i<=num; i++){
+    pattern = "";
+    for(j=1; j<=num; j++){
+        pattern += " *"
+        // pattern =+ " *"                   // error: nan (due to: =+)
+    }console.log(pattern)
+}
+console.log("-----------------------------------------")
+
+
+/*14
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+*/
+
+num = 5;
+
+    pattern = "";
+    for (j=1; j<=num; j++){
+        pattern = pattern +  " " + j ;
+    console.log(pattern)
+    }
+    console.log("-----------------------------------------")
+
+
+/*15
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+*/
+
+n = 5;
+pattern = "";
+for(i=1; i<=n; i++){
+    pattern= pattern + " "+i;
+    console.log(pattern)
 }
