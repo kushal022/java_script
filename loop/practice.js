@@ -322,7 +322,7 @@ num = 5;
 
     pattern = "";
     for (j=1; j<=num; j++){
-        pattern = pattern +  " " + j ;
+        pattern = pattern + j + " " ;
     console.log(pattern)
     }
     console.log("-----------------------------------------")
@@ -342,8 +342,109 @@ Output:
 */
 
 n = 5;
-pattern = "";
-for(i=1; i<=n; i++){
-    pattern= pattern + " "+i;
+for(j=n; j>=1; j--){
+    pattern = "";
+    for(i=1; i<=j; i++){
+        pattern = pattern + i+ " ";
+        // console.log(pattern)
+
+    }
     console.log(pattern)
 }
+console.log("-----------------------------------------")
+
+/*16
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+
+*/
+
+n = 5;
+for(i=1; i<=n; i++){
+    row = "";
+    for(j=1; j<=n; j++){
+        if(i==1 || i==n){                                   //i for row
+            row = row + "*" + " ";
+        }
+         else if(j==1 || j==n ){                            //j for column
+            row = row + "*" + " ";
+        }
+        else{
+            row = row + " " + " ";
+        }
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*17
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+*/
+
+n=5;
+for(i=1; i<=n; i++){
+    row = "";
+    for(j=1; j<=n-i; j++){
+        row = row + " " + " ";
+    }
+    for(k=1; k<=i; k++){
+        row = row + "*" + " ";
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*18
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+*/
+
+n=5;
+for(i=1; i<=n; i++){
+    row = "";
+    for(j=1; j<=n-i; j++){
+        row = row + " " + " ";
+    }
+    for(k=1; k<=i*2-1; k++){
+        row = row + "*" + " ";
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*19
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+     *
+   * * *
+  * * * *
+ * * * * *
+*/
