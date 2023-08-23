@@ -448,3 +448,191 @@ Output:
   * * * *
  * * * * *
 */
+// python:
+// row = int(input("Enter the number: "))
+// for bar in range(1,row+1):
+//     for space in range(1,row+2-bar):
+//         print("",end=" ")
+//     for rowmat in range(1,bar+1):
+//         print("*",end=" ")
+//     print("")
+// """    
+
+n = 5;
+for (i=1; i<n; i++){
+    row = "";
+    for(k=1; k<n-i; k++){
+        row = row + " ";
+    }
+
+    for(j=1; j<=i+1; j++){
+            if(j==k-3){
+                row = row + " "
+            }else{
+            row = row + "* "
+            }
+        }
+        console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*20
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+          * 
+        * *
+      * * *
+    * * * *
+  * * * * *
+
+*/
+
+n=5;
+// row = "";
+for(i=1; i<=n; i++){
+    row = " ";
+
+    for(k=1; k<=n-i; k++){
+        row += "  "                     //2 space used
+    }
+    for(j=1; j<i+1; j++){
+    row = row + " *";
+    }
+    console.log(row)
+    // }
+}
+console.log("-----------------------------------------")
+
+/*21
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+               1  
+            1  2
+         1  2  3
+      1  2  3  4
+   1  2  3  4  5
+*/
+
+n=5;
+for(i=1; i<=n; i++){
+    row = "";
+    for(k=1; k<=n-i; k++ ){
+        row += "  "                 //2 space used
+    }
+    for(j=1; j<=i; j++){
+        row += " "+j;
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*22
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+          * 
+        * * *
+      * * * * *
+    * * * * * * *
+  * * * * * * * * *
+*/
+
+n=5;
+// row = "";
+for(i=1; i<=n; i++){
+    row = "";
+    for(l=1; l<=n-i; l++){
+        row += "  "
+    }
+    for(k=1; k<i; k++){
+        row += " *"
+    }
+    for(j=1; j<=i; j++){
+        row += " *";
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+
+/*23
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+     1  
+    1  2
+   1  2  3
+  1  2  3  4
+ 1  2  3  4  5
+*/
+
+n=5;
+for(i=1; i<=n; i++){
+    row = "";
+    for(k=1; k<=n-i; k++){
+        row += " "
+    }
+    for(j=1; j<=i; j++){
+        row += "  " + j;
+    }console.log(row)
+}
+console.log("-----------------------------------------")
+
+
+/*24
+Make a following Pattern
+Input:
+Enter number: 5
+
+Output:
+               1  
+            1  2  1
+         1  2  3  1  2
+      1  2  3  4  1  2  3
+   1  2  3  4  5  1  2  3  4
+*/
+
+n=5;
+for(i=1; i<=n; i++){
+    row = "";
+    for(l=1; l<=n-i; l++){
+        row += "   ";
+    }
+    for(k=1; k<=i; k++){
+        row += "  "+ k;
+    }
+    for(j=1; j<=i-1; j++){
+        row += "  " +j;
+    }console.log(row)
+}
+console.log("-----------------------------------------")
+
+
+/*25
+Reversed Pyramid Star Pattern
+n=5
+
+*********
+ *******
+  *****
+   ***
+    *
+*/
+
+n=5
+for(i=1; i<=n; i++){
+    row = "";
+    for(j=1; j<=n*2-i; j++){
+        row += j;
+    }console.log(row)
+}
