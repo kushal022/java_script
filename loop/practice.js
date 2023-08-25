@@ -630,9 +630,218 @@ n=5
 */
 
 n=5
-for(i=1; i<=n; i++){
+for(i=n; i>=1; i--){
     row = "";
-    for(j=1; j<=n*2-i; j++){
-        row += j;
+    for(k=1; k<=n-i; k++){
+        row += " "
+    }
+    for(j=1; j<=i*2-1; j++){
+        row += "*";
     }console.log(row)
 }
+console.log("-----------------------------------------")
+
+/*26
+Hollow square Star Pattern
+n=5
+
+ * * * * *
+ *       *
+ *       *
+ *       *
+ * * * * *
+*/
+
+n=5;
+for(j=1; j<=n; j++){
+    row = "";
+    for(i=1; i<=n; i++){
+        if(j==1 || j==5 || i==1 || i==5){
+        row += " *";
+        }
+        else{
+            row += "  "
+        }
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*27
+ Hollow Right angle triangle pattern:
+
+ *
+ * *
+ *   *
+ *     *
+ * * * * *
+*/
+
+n=5; 
+for(j=1; j<=n; j++){
+    row = "";
+    for(i=1; i<=j; i++){
+        if(i==1 || i==j || j==n){
+        row += " *";
+        }else{
+            row += "  ";
+        }
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*28
+Hollow Pyramid Star Pattern:
+
+         *
+       *   *
+     *       *
+   *           *
+ * * * * * * * * *
+ 
+*/
+n=5;
+for(i=1; i<=n; i++){
+    row = "";
+    for(k=1; k<=n-i; k++){
+        row += "  ";
+    }
+    for(j=1; j<=i*2-1; j++){
+        if(j==1 || j==i*2-1 || i==n){
+        row += " *";
+        }else{
+            row +="  "
+        }
+    }
+    console.log(row)
+}
+console.log("-----------------------------------------")
+
+/*29
+
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+*/
+
+n=5;
+for(i=1; i<=n-1; i++){
+    row = "";
+    for(k=1; k<=n-i; k++){
+        row += "  "
+    }
+    for(j=1; j<=i*2-1; j++){
+        row += "* ";
+    }
+    console.log(row)
+}
+for(l=n; l>=1; l--){
+    d_row = "";
+    for(m=1; m<=n-l; m++){
+        d_row += "  "
+    }
+    for(p=1; p<=l*2-1; p++){
+        d_row += "* "
+    }    
+    console.log(d_row)
+}
+console.log("-----------------------------------------")
+
+
+/*30
+
+        *
+      *   * 
+    *       *
+  *           *
+*               *
+  *           *
+    *       *
+      *   *
+        *
+        
+*/
+
+n=5;
+for(i=1; i<=n-1; i++){
+    row = "";
+    for(k=1; k<=n-i; k++){
+        row += "  "
+    }
+    for(j=1; j<=i*2-1; j++){
+        if(j==1 || j==i*2-1){
+        row += "* ";
+        }else{
+            row += "  "
+        }
+    }
+    console.log(row)
+}
+for(l=n; l>=1; l--){
+    d_row = "";
+    for(m=1; m<=n-l; m++){
+        d_row += "  "
+    }
+    for(p=1; p<=l*2-1; p++){
+        if(p==1 || p==l*2-1){
+        d_row += "* "
+        }else{
+            d_row += "  "
+        }
+    }    
+    console.log(d_row)
+}
+console.log("-----------------------------------------")
+
+/*31
+
+        *
+      * * *
+    *   *   *
+  *     *     *
+* * * * * * * * *
+  *     *     *
+    *   *   *
+      * * *
+        *
+
+*/
+n=5;
+for(i=1; i<=n-1; i++){
+    row = "";
+    for(k=1; k<=n-i; k++){
+        row += "  "
+    }
+    for(j=1; j<=i*2-1; j++){
+        if(j==1 || j==i*2-1 || j==i){
+        row += "* ";
+        }else{
+            row += "  "
+        }
+    }
+    console.log(row)
+}
+for(l=n; l>=1; l--){
+    d_row = "";
+    for(m=1; m<=n-l; m++){
+        d_row += "  "
+    }
+    for(p=1; p<=l*2-1; p++){
+        if(p==1 || p==l*2-1 || p==l || l==n){
+        d_row += "* "
+        }else{
+            d_row += "  "
+        }
+    }    
+    console.log(d_row)
+}
+console.log("-----------------------------------------")
+
+
