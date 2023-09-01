@@ -47,3 +47,43 @@ do{
 }while(index < rate.length )
 
 console.log("Finish do......while loop")
+
+
+/**
+
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+
+*/
+
+
+n = 5;
+j=1;
+while(j<=n){
+    i=1;
+    row = ""
+    while(i<=n){
+        row = row + "* ";
+        i++
+    }
+console.log(row)
+j++
+}
+console.log("--------------------------")
+
+
+n = 5;
+j=1;
+while(j<=n){
+    i=1;
+    row = ""
+    while(i<=j){
+        row = row + "* ";
+        i++
+    }
+console.log(row)
+j++
+}
