@@ -87,4 +87,70 @@ console.log(colors2)        //[ 'red', 'orange' ]
 
 // max & min
 
-    
+    const price1 = [100,5,33,66,35]
+    // Math.max(x)
+    console.log(Math.max(...price1))        // 100
+    // Math.min(x)
+    console.log(Math.min(...price1))        // 5
+    // Math.max.apply(null,x)
+    console.log(Math.max.apply(null, price1))        // 100; old mathod
+    // Math.min.apply(null,x)
+    console.log(Math.min.apply(null, price1))        // 5; old mathod
+
+
+// sort:
+
+    prod = ['abc','def','efg','bca']
+
+    // .sort()
+        prod.sort()    
+
+        console.log(prod)  // [ 'abc', 'bca', 'def', 'efg' ]
+
+    rate = [25,26,75,23,78,34,89]
+        //1
+        rate.sort()
+        console.log(rate)       // [23, 25, 26, 34,75, 78, 89] 
+        //2
+        console.log(rate.sort(function(a,b){return a - b}))     // [23, 25, 26, 34,75, 78, 89] 
+
+
+prod1 = [
+{name: 'toy1', rateis:123},
+{name: 'toy2', rateis:34},
+{name: 'toy3', rateis:6},
+{name: 'toy4', rateis:46},
+{name: 'toy5', rateis:8},
+]
+console.log(prod1.sort(function(a,b){return a - b})) // not working
+
+/* 
+[
+  { name: 'toy1', rateis: 123 },
+  { name: 'toy2', rateis: 34 },
+  { name: 'toy3', rateis: 6 },
+  { name: 'toy4', rateis: 46 },
+  { name: 'toy5', rateis: 8 }
+]
+*/
+
+console.log(prod1.sort(function(a,b){return a.rateis - b.rateis})) 
+
+/*
+[
+  { name: 'toy3', rateis: 6 },
+  { name: 'toy5', rateis: 8 },
+  { name: 'toy2', rateis: 34 },
+  { name: 'toy4', rateis: 46 },
+  { name: 'toy1', rateis: 123 }
+]
+*/
+
+
+// join:
+
+let light = ['white','blue','red']
+
+let text = light.join('***')
+
+console.log(text)   // white***blue***red
